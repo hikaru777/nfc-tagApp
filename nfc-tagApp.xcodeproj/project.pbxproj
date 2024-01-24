@@ -8,17 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		5D063A1C2B61251B003C3E9D /* nfc_tagAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A1B2B61251B003C3E9D /* nfc_tagAppApp.swift */; };
-		5D063A1E2B61251B003C3E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A1D2B61251B003C3E9D /* ContentView.swift */; };
 		5D063A202B61251B003C3E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A1F2B61251B003C3E9D /* Assets.xcassets */; };
 		5D063A232B61251B003C3E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A222B61251B003C3E9D /* Preview Assets.xcassets */; };
+		5D063A2A2B612587003C3E9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A292B612587003C3E9D /* GoogleService-Info.plist */; };
+		5D063A2D2B6125BE003C3E9D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A2C2B6125BE003C3E9D /* FirebaseAnalytics */; };
+		5D063A2F2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A2E2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion */; };
+		5D063A312B6125BE003C3E9D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A302B6125BE003C3E9D /* FirebaseAnalyticsSwift */; };
+		5D063A332B6125BE003C3E9D /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A322B6125BE003C3E9D /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		5D063A352B6125BE003C3E9D /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A342B6125BE003C3E9D /* FirebaseAppCheck */; };
+		5D063A392B612616003C3E9D /* CodableNFCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A372B612616003C3E9D /* CodableNFCManager.swift */; };
+		5D063A3A2B612616003C3E9D /* NFCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A382B612616003C3E9D /* NFCManager.swift */; };
+		5D063A472B612637003C3E9D /* CustomSinpleTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A3C2B612637003C3E9D /* CustomSinpleTab.swift */; };
+		5D063A482B612637003C3E9D /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A3D2B612637003C3E9D /* TabModel.swift */; };
+		5D063A492B612637003C3E9D /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A3E2B612637003C3E9D /* TabViewModel.swift */; };
+		5D063A4A2B612637003C3E9D /* CustonSinpleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A3F2B612637003C3E9D /* CustonSinpleTabBar.swift */; };
+		5D063A4B2B612637003C3E9D /* LoadIntoNFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A412B612637003C3E9D /* LoadIntoNFC.swift */; };
+		5D063A4C2B612637003C3E9D /* WriteIntoNFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A422B612637003C3E9D /* WriteIntoNFC.swift */; };
+		5D063A4D2B612637003C3E9D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A432B612637003C3E9D /* MainView.swift */; };
+		5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */; };
+		5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D063A182B61251B003C3E9D /* nfc-tagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nfc-tagApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D063A1B2B61251B003C3E9D /* nfc_tagAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nfc_tagAppApp.swift; sourceTree = "<group>"; };
-		5D063A1D2B61251B003C3E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D063A1F2B61251B003C3E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D063A222B61251B003C3E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D063A292B612587003C3E9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D063A362B612607003C3E9D /* wed-nfc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "wed-nfc.entitlements"; sourceTree = "<group>"; };
+		5D063A372B612616003C3E9D /* CodableNFCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableNFCManager.swift; sourceTree = "<group>"; };
+		5D063A382B612616003C3E9D /* NFCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCManager.swift; sourceTree = "<group>"; };
+		5D063A3C2B612637003C3E9D /* CustomSinpleTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSinpleTab.swift; sourceTree = "<group>"; };
+		5D063A3D2B612637003C3E9D /* TabModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		5D063A3E2B612637003C3E9D /* TabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		5D063A3F2B612637003C3E9D /* CustonSinpleTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustonSinpleTabBar.swift; sourceTree = "<group>"; };
+		5D063A412B612637003C3E9D /* LoadIntoNFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadIntoNFC.swift; sourceTree = "<group>"; };
+		5D063A422B612637003C3E9D /* WriteIntoNFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteIntoNFC.swift; sourceTree = "<group>"; };
+		5D063A432B612637003C3E9D /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadIntoNFCViewModel.swift; sourceTree = "<group>"; };
+		5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteIntoNFCViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +54,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D063A312B6125BE003C3E9D /* FirebaseAnalyticsSwift in Frameworks */,
+				5D063A2D2B6125BE003C3E9D /* FirebaseAnalytics in Frameworks */,
+				5D063A2F2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				5D063A352B6125BE003C3E9D /* FirebaseAppCheck in Frameworks */,
+				5D063A332B6125BE003C3E9D /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +84,14 @@
 		5D063A1A2B61251B003C3E9D /* nfc-tagApp */ = {
 			isa = PBXGroup;
 			children = (
+				5D063A362B612607003C3E9D /* wed-nfc.entitlements */,
 				5D063A1B2B61251B003C3E9D /* nfc_tagAppApp.swift */,
-				5D063A1D2B61251B003C3E9D /* ContentView.swift */,
+				5D063A372B612616003C3E9D /* CodableNFCManager.swift */,
+				5D063A382B612616003C3E9D /* NFCManager.swift */,
+				5D063A3B2B612637003C3E9D /* SinpleTabGroup */,
+				5D063A402B612637003C3E9D /* ViewGroup */,
+				5D063A442B612637003C3E9D /* ViewModelGroup */,
+				5D063A292B612587003C3E9D /* GoogleService-Info.plist */,
 				5D063A1F2B61251B003C3E9D /* Assets.xcassets */,
 				5D063A212B61251B003C3E9D /* Preview Content */,
 			);
@@ -65,6 +104,36 @@
 				5D063A222B61251B003C3E9D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D063A3B2B612637003C3E9D /* SinpleTabGroup */ = {
+			isa = PBXGroup;
+			children = (
+				5D063A3C2B612637003C3E9D /* CustomSinpleTab.swift */,
+				5D063A3D2B612637003C3E9D /* TabModel.swift */,
+				5D063A3E2B612637003C3E9D /* TabViewModel.swift */,
+				5D063A3F2B612637003C3E9D /* CustonSinpleTabBar.swift */,
+			);
+			path = SinpleTabGroup;
+			sourceTree = "<group>";
+		};
+		5D063A402B612637003C3E9D /* ViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
+				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
+				5D063A432B612637003C3E9D /* MainView.swift */,
+			);
+			path = ViewGroup;
+			sourceTree = "<group>";
+		};
+		5D063A442B612637003C3E9D /* ViewModelGroup */ = {
+			isa = PBXGroup;
+			children = (
+				5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */,
+				5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */,
+			);
+			path = ViewModelGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +152,13 @@
 			dependencies = (
 			);
 			name = "nfc-tagApp";
+			packageProductDependencies = (
+				5D063A2C2B6125BE003C3E9D /* FirebaseAnalytics */,
+				5D063A2E2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion */,
+				5D063A302B6125BE003C3E9D /* FirebaseAnalyticsSwift */,
+				5D063A322B6125BE003C3E9D /* FirebaseAnalyticsWithoutAdIdSupport */,
+				5D063A342B6125BE003C3E9D /* FirebaseAppCheck */,
+			);
 			productName = "nfc-tagApp";
 			productReference = 5D063A182B61251B003C3E9D /* nfc-tagApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 5D063A0F2B61251A003C3E9D;
+			packageReferences = (
+				5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5D063A192B61251B003C3E9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D063A232B61251B003C3E9D /* Preview Assets.xcassets in Resources */,
+				5D063A2A2B612587003C3E9D /* GoogleService-Info.plist in Resources */,
 				5D063A202B61251B003C3E9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +217,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D063A1E2B61251B003C3E9D /* ContentView.swift in Sources */,
+				5D063A4B2B612637003C3E9D /* LoadIntoNFC.swift in Sources */,
+				5D063A392B612616003C3E9D /* CodableNFCManager.swift in Sources */,
+				5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */,
+				5D063A472B612637003C3E9D /* CustomSinpleTab.swift in Sources */,
+				5D063A3A2B612616003C3E9D /* NFCManager.swift in Sources */,
+				5D063A482B612637003C3E9D /* TabModel.swift in Sources */,
+				5D063A4C2B612637003C3E9D /* WriteIntoNFC.swift in Sources */,
+				5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */,
+				5D063A4D2B612637003C3E9D /* MainView.swift in Sources */,
+				5D063A492B612637003C3E9D /* TabViewModel.swift in Sources */,
+				5D063A4A2B612637003C3E9D /* CustonSinpleTabBar.swift in Sources */,
 				5D063A1C2B61251B003C3E9D /* nfc_tagAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +434,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D063A2C2B6125BE003C3E9D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5D063A2E2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		5D063A302B6125BE003C3E9D /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		5D063A322B6125BE003C3E9D /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		5D063A342B6125BE003C3E9D /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D063A102B61251A003C3E9D /* Project object */;
 }
