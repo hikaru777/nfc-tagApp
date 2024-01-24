@@ -27,7 +27,7 @@ struct nfc_tagAppApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-          LoadIntoNFC(viewModel: .init())
+          MainView()
       }
     }
   }
