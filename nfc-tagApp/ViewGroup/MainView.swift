@@ -24,6 +24,7 @@ struct MainView: View {
                         CustomSimpleTab(size: size, bottomEdge: bottom, viewModel: .init())
                             .ignoresSafeArea(.all, edges: .bottom)
                         
+                        
                     } .ignoresSafeArea(.keyboard)
                         .preferredColorScheme(.light)
                 

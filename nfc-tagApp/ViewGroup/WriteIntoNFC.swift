@@ -21,7 +21,7 @@ struct WriteIntoNFC: View {
                 NFCManager.shared.write(text: viewModel.inputTextField)
             },
                    label: {
-                Text("書き込む")
+                Text("書き込むﾖ")
             })
         }
         
