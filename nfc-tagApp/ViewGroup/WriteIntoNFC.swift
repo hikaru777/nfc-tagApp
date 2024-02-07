@@ -6,28 +6,24 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct WriteIntoNFC: View {
-    
-    @StateObject var viewModel: WriteIntoNFCViewModel
     
     var body: some View {
         
         VStack {
             
-            TextField("", text: $viewModel.inputTextField)
+//            TextField("", text: $viewModel.inputTextField)
             
             Button(action: {
-                NFCManager.shared.write(text: viewModel.inputTextField)
+                NFCManager.shared.write(text: "viewModel.inputTextField")
             },
                    label: {
                 Text("書き込むﾖ")
             })
         }
         
+        
     }
-}
-
-#Preview {
-    WriteIntoNFC(viewModel: .init())
 }

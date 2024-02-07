@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D01DFF02B708FFC0042FE5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01DFEF2B708FFC0042FE5E /* ContentView.swift */; };
+		5D01DFF22B70900F0042FE5E /* SendToDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01DFF12B70900F0042FE5E /* SendToDB.swift */; };
+		5D01DFF52B7091DD0042FE5E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D01DFF42B7091DD0042FE5E /* Kingfisher */; };
+		5D01DFF72B70939C0042FE5E /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01DFF62B70939C0042FE5E /* NextView.swift */; };
+		5D01DFF92B7094F30042FE5E /* CheckPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01DFF82B7094F30042FE5E /* CheckPermission.swift */; };
+		5D01DFFB2B7097A90042FE5E /* ChangeImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01DFFA2B7097A90042FE5E /* ChangeImageSize.swift */; };
 		5D063A1C2B61251B003C3E9D /* nfc_tagAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A1B2B61251B003C3E9D /* nfc_tagAppApp.swift */; };
-		5D063A202B61251B003C3E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A1F2B61251B003C3E9D /* Assets.xcassets */; };
-		5D063A232B61251B003C3E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A222B61251B003C3E9D /* Preview Assets.xcassets */; };
-		5D063A2A2B612587003C3E9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A292B612587003C3E9D /* GoogleService-Info.plist */; };
 		5D063A2D2B6125BE003C3E9D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A2C2B6125BE003C3E9D /* FirebaseAnalytics */; };
 		5D063A2F2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A2E2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion */; };
 		5D063A312B6125BE003C3E9D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5D063A302B6125BE003C3E9D /* FirebaseAnalyticsSwift */; };
@@ -27,15 +30,31 @@
 		5D063A4D2B612637003C3E9D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A432B612637003C3E9D /* MainView.swift */; };
 		5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */; };
 		5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */; };
+		5D5AA7362B70B3B0003E196D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA7352B70B3B0003E196D /* SwiftUIView.swift */; };
+		5D5AA7372B70B4EE003E196D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A1F2B61251B003C3E9D /* Assets.xcassets */; };
+		5D5AA7382B70B4F2003E196D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A222B61251B003C3E9D /* Preview Assets.xcassets */; };
+		5D5AA73A2B70C0B6003E196D /* ShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA7392B70C0B6003E196D /* ShotView.swift */; };
+		5D5AA73C2B70D803003E196D /* UIImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */; };
+		5D5AA73E2B7124C3003E196D /* AsyncCompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */; };
+		5DC711D82B62B4DE00257AF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */; };
+		5DC712972B6A4D7300257AF3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC712962B6A4D7300257AF3 /* FirebaseAuth */; };
+		5DEA0B322B6A51E60040F2E3 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA0B312B6A51E60040F2E3 /* FirebaseClient.swift */; };
+		5DEA0B342B6A52060040F2E3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEA0B332B6A52060040F2E3 /* FirebaseStorage */; };
+		5DEA0B362B6A522E0040F2E3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEA0B352B6A522E0040F2E3 /* FirebaseFirestoreSwift */; };
+		5DEA0B382B6A52540040F2E3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEA0B372B6A52540040F2E3 /* FirebaseDatabase */; };
+		5DEA0B3A2B6A52700040F2E3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA0B392B6A52700040F2E3 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D01DFEF2B708FFC0042FE5E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5D01DFF12B70900F0042FE5E /* SendToDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendToDB.swift; sourceTree = "<group>"; };
+		5D01DFF62B70939C0042FE5E /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		5D01DFF82B7094F30042FE5E /* CheckPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPermission.swift; sourceTree = "<group>"; };
+		5D01DFFA2B7097A90042FE5E /* ChangeImageSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeImageSize.swift; sourceTree = "<group>"; };
 		5D063A182B61251B003C3E9D /* nfc-tagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nfc-tagApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D063A1B2B61251B003C3E9D /* nfc_tagAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nfc_tagAppApp.swift; sourceTree = "<group>"; };
 		5D063A1F2B61251B003C3E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D063A222B61251B003C3E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5D063A292B612587003C3E9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5D063A362B612607003C3E9D /* wed-nfc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "wed-nfc.entitlements"; sourceTree = "<group>"; };
 		5D063A372B612616003C3E9D /* CodableNFCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableNFCManager.swift; sourceTree = "<group>"; };
 		5D063A382B612616003C3E9D /* NFCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCManager.swift; sourceTree = "<group>"; };
 		5D063A3C2B612637003C3E9D /* CustomSinpleTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSinpleTab.swift; sourceTree = "<group>"; };
@@ -47,6 +66,15 @@
 		5D063A432B612637003C3E9D /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadIntoNFCViewModel.swift; sourceTree = "<group>"; };
 		5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteIntoNFCViewModel.swift; sourceTree = "<group>"; };
+		5D063A522B62AD63003C3E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D063A542B62B1A4003C3E9D /* nfc-tagApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nfc-tagApp.entitlements"; sourceTree = "<group>"; };
+		5D5AA7352B70B3B0003E196D /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = ../../../../Downloads/slide/slide/SwiftUIView.swift; sourceTree = "<group>"; };
+		5D5AA7392B70C0B6003E196D /* ShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotView.swift; sourceTree = "<group>"; };
+		5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerView.swift; sourceTree = "<group>"; };
+		5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCompactMap.swift; sourceTree = "<group>"; };
+		5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5DEA0B312B6A51E60040F2E3 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
+		5DEA0B392B6A52700040F2E3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +83,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D063A312B6125BE003C3E9D /* FirebaseAnalyticsSwift in Frameworks */,
+				5DC712972B6A4D7300257AF3 /* FirebaseAuth in Frameworks */,
 				5D063A2D2B6125BE003C3E9D /* FirebaseAnalytics in Frameworks */,
 				5D063A2F2B6125BE003C3E9D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				5D01DFF52B7091DD0042FE5E /* Kingfisher in Frameworks */,
+				5DEA0B342B6A52060040F2E3 /* FirebaseStorage in Frameworks */,
 				5D063A352B6125BE003C3E9D /* FirebaseAppCheck in Frameworks */,
+				5DEA0B382B6A52540040F2E3 /* FirebaseDatabase in Frameworks */,
 				5D063A332B6125BE003C3E9D /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				5DEA0B362B6A522E0040F2E3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +101,11 @@
 		5D063A0F2B61251A003C3E9D = {
 			isa = PBXGroup;
 			children = (
+				5D063A542B62B1A4003C3E9D /* nfc-tagApp.entitlements */,
+				5D063A522B62AD63003C3E9D /* Info.plist */,
 				5D063A1A2B61251B003C3E9D /* nfc-tagApp */,
 				5D063A192B61251B003C3E9D /* Products */,
+				5DC712952B6A4D7300257AF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,15 +120,15 @@
 		5D063A1A2B61251B003C3E9D /* nfc-tagApp */ = {
 			isa = PBXGroup;
 			children = (
-				5D063A362B612607003C3E9D /* wed-nfc.entitlements */,
 				5D063A1B2B61251B003C3E9D /* nfc_tagAppApp.swift */,
 				5D063A372B612616003C3E9D /* CodableNFCManager.swift */,
 				5D063A382B612616003C3E9D /* NFCManager.swift */,
 				5D063A3B2B612637003C3E9D /* SinpleTabGroup */,
 				5D063A402B612637003C3E9D /* ViewGroup */,
 				5D063A442B612637003C3E9D /* ViewModelGroup */,
-				5D063A292B612587003C3E9D /* GoogleService-Info.plist */,
+				5DEA0B302B6A51B40040F2E3 /* VariousOtherThings */,
 				5D063A1F2B61251B003C3E9D /* Assets.xcassets */,
+				5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */,
 				5D063A212B61251B003C3E9D /* Preview Content */,
 			);
 			path = "nfc-tagApp";
@@ -120,9 +156,14 @@
 		5D063A402B612637003C3E9D /* ViewGroup */ = {
 			isa = PBXGroup;
 			children = (
+				5D01DFEF2B708FFC0042FE5E /* ContentView.swift */,
+				5D01DFF62B70939C0042FE5E /* NextView.swift */,
 				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
+				5D5AA7352B70B3B0003E196D /* SwiftUIView.swift */,
 				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
+				5D5AA7392B70C0B6003E196D /* ShotView.swift */,
 				5D063A432B612637003C3E9D /* MainView.swift */,
+				5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */,
 			);
 			path = ViewGroup;
 			sourceTree = "<group>";
@@ -134,6 +175,26 @@
 				5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */,
 			);
 			path = ViewModelGroup;
+			sourceTree = "<group>";
+		};
+		5DC712952B6A4D7300257AF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DEA0B302B6A51B40040F2E3 /* VariousOtherThings */ = {
+			isa = PBXGroup;
+			children = (
+				5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */,
+				5DEA0B312B6A51E60040F2E3 /* FirebaseClient.swift */,
+				5DEA0B392B6A52700040F2E3 /* Data.swift */,
+				5D01DFF82B7094F30042FE5E /* CheckPermission.swift */,
+				5D01DFF12B70900F0042FE5E /* SendToDB.swift */,
+				5D01DFFA2B7097A90042FE5E /* ChangeImageSize.swift */,
+			);
+			path = VariousOtherThings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +219,11 @@
 				5D063A302B6125BE003C3E9D /* FirebaseAnalyticsSwift */,
 				5D063A322B6125BE003C3E9D /* FirebaseAnalyticsWithoutAdIdSupport */,
 				5D063A342B6125BE003C3E9D /* FirebaseAppCheck */,
+				5DC712962B6A4D7300257AF3 /* FirebaseAuth */,
+				5DEA0B332B6A52060040F2E3 /* FirebaseStorage */,
+				5DEA0B352B6A522E0040F2E3 /* FirebaseFirestoreSwift */,
+				5DEA0B372B6A52540040F2E3 /* FirebaseDatabase */,
+				5D01DFF42B7091DD0042FE5E /* Kingfisher */,
 			);
 			productName = "nfc-tagApp";
 			productReference = 5D063A182B61251B003C3E9D /* nfc-tagApp.app */;
@@ -189,6 +255,7 @@
 			mainGroup = 5D063A0F2B61251A003C3E9D;
 			packageReferences = (
 				5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5D01DFF32B7091DD0042FE5E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 5D063A192B61251B003C3E9D /* Products */;
 			projectDirPath = "";
@@ -204,9 +271,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D063A232B61251B003C3E9D /* Preview Assets.xcassets in Resources */,
-				5D063A2A2B612587003C3E9D /* GoogleService-Info.plist in Resources */,
-				5D063A202B61251B003C3E9D /* Assets.xcassets in Resources */,
+				5D5AA7382B70B4F2003E196D /* Preview Assets.xcassets in Resources */,
+				5D5AA7372B70B4EE003E196D /* Assets.xcassets in Resources */,
+				5DC711D82B62B4DE00257AF3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,16 +284,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEA0B3A2B6A52700040F2E3 /* Data.swift in Sources */,
+				5D5AA73E2B7124C3003E196D /* AsyncCompactMap.swift in Sources */,
+				5D01DFF02B708FFC0042FE5E /* ContentView.swift in Sources */,
 				5D063A4B2B612637003C3E9D /* LoadIntoNFC.swift in Sources */,
 				5D063A392B612616003C3E9D /* CodableNFCManager.swift in Sources */,
 				5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */,
 				5D063A472B612637003C3E9D /* CustomSinpleTab.swift in Sources */,
 				5D063A3A2B612616003C3E9D /* NFCManager.swift in Sources */,
+				5D5AA7362B70B3B0003E196D /* SwiftUIView.swift in Sources */,
 				5D063A482B612637003C3E9D /* TabModel.swift in Sources */,
 				5D063A4C2B612637003C3E9D /* WriteIntoNFC.swift in Sources */,
 				5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */,
+				5D01DFF72B70939C0042FE5E /* NextView.swift in Sources */,
+				5D01DFFB2B7097A90042FE5E /* ChangeImageSize.swift in Sources */,
 				5D063A4D2B612637003C3E9D /* MainView.swift in Sources */,
+				5D01DFF22B70900F0042FE5E /* SendToDB.swift in Sources */,
+				5D5AA73A2B70C0B6003E196D /* ShotView.swift in Sources */,
 				5D063A492B612637003C3E9D /* TabViewModel.swift in Sources */,
+				5DEA0B322B6A51E60040F2E3 /* FirebaseClient.swift in Sources */,
+				5D5AA73C2B70D803003E196D /* UIImagePickerView.swift in Sources */,
+				5D01DFF92B7094F30042FE5E /* CheckPermission.swift in Sources */,
 				5D063A4A2B612637003C3E9D /* CustonSinpleTabBar.swift in Sources */,
 				5D063A1C2B61251B003C3E9D /* nfc_tagAppApp.swift in Sources */,
 			);
@@ -359,13 +437,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "nfc-tagApp/nfc-tagApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nfc-tagApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 8VQ7U9Z9U2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "nfc-tagApp/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Life is Collection !";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "スキャンするよ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -375,8 +459,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.tech.Hikaru.Honda.nfc-tagApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.tech.Hikaru.Honda.nfc-tag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,13 +473,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "nfc-tagApp/nfc-tagApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nfc-tagApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 8VQ7U9Z9U2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "nfc-tagApp/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Life is Collection !";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "スキャンするよ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -404,8 +495,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.tech.Hikaru.Honda.nfc-tagApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.tech.Hikaru.Honda.nfc-tag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,6 +528,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5D01DFF32B7091DD0042FE5E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher?fbclid=IwAR16YVgx8W_MtqBbW4NpgGk-3TfDsOMYXwImqfKhhNl78xim5ZZnd6Xnv2U";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
 		5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -447,6 +547,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5D01DFF42B7091DD0042FE5E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D01DFF32B7091DD0042FE5E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		5D063A2C2B6125BE003C3E9D /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -471,6 +576,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAppCheck;
+		};
+		5DC712962B6A4D7300257AF3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5DEA0B332B6A52060040F2E3 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5DEA0B352B6A522E0040F2E3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		5DEA0B372B6A52540040F2E3 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D063A2B2B6125BE003C3E9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

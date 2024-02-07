@@ -11,5 +11,7 @@ import SwiftUI
 class ReadIntoNFCViewModel: NSObject, ObservableObject {
     
     @Published var textLabel: String = ""
+    @Published var imageUrl: String = ""
+    @Published var profileData: ImageData!
     
 }

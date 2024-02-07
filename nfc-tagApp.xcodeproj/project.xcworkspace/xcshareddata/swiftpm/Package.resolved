@@ -82,6 +82,15 @@
       }
     },
     {
+      "identity" : "kingfisher?fbclid=iwar16yvgx8w_mtqbbw4npggk-3tfdsomyxwimqfkhhnl78xim5zznd6xnv2u",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher?fbclid=IwAR16YVgx8W_MtqBbW4NpgGk-3TfDsOMYXwImqfKhhNl78xim5ZZnd6Xnv2U",
+      "state" : {
+        "revision" : "3ec0ab0bca4feb56e8b33e289c9496e89059dd08",
+        "version" : "7.10.2"
+      }
+    },
+    {
       "identity" : "leveldb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/leveldb.git",

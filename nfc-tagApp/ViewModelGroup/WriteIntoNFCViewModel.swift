@@ -10,6 +10,14 @@ import SwiftUI
 
 class WriteIntoNFCViewModel: NSObject, ObservableObject {
     
-    @Published var inputTextField: String = ""
+    @Published var showPickerView: Bool = false
+    @Published var decidedProfileImageUrl: String = ""
+    @Published var sendToDBModel = SendToDBModel()
+    @Published var uid: String = ""
+    
+    @Published var capturedImage: UIImage?
+    @Published var imageUrl = URL(string: "")
+    @Published var showXButton = false
+    @Published var opacity = 100
     
 }

@@ -6,33 +6,76 @@
 //
 
 import SwiftUI
+import Kingfisher
+import FirebaseAuth
 
 struct LoadIntoNFC: View {
     
-    @StateObject var viewModel: ReadIntoNFCViewModel
+    @ObservedObject var viewModel: ReadIntoNFCViewModel
     
     var body: some View {
         
-        VStack {
+        VStack(spacing: 15) {
             
-            Text(viewModel.textLabel)
-            
+            if viewModel.imageUrl != "" {
+                
+                KFImage(URL(string: viewModel.imageUrl))
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 310, height: 550)
+                    .background(Color.white)
+                    .cornerRadius(21)
+                
+            }
             Button(action: {
                 NFCManager.shared.read { text in
                     if let text = text {
                         viewModel.textLabel = text
+                        Task {
+                            do {
+                                let data = try await FirebaseClient.getProfileViewData(uid: text)
+                                viewModel.imageUrl = data.imageUrl
+                                print(text)
+                                if !viewModel.profileData.gotAccounts!.contains(text) {
+                                    viewModel.profileData.gotAccounts!.append(text)
+                                }
+                                print(viewModel.profileData.gotAccounts)
+                                try await FirebaseClient.setImage(uid: Auth.auth().currentUser!.uid, imageUrl: viewModel.profileData!)
+                            } catch {
+                                print(error.localizedDescription)
+                            }
+                        }
                     } else {
                         viewModel.textLabel = "データなし"
                     }
                 }
             }, label: {
                 Text("読み込む")
+                    .fontWeight(.semibold)
+                    .frame(width: 160, height: 48)
+                    .foregroundColor(Color(.blue))
+                    .background(Color(.white))
+                    .cornerRadius(24)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 24)
+                            .stroke(Color(.blue), lineWidth: 1.0)
+                            .foregroundColor(Color.black)
+                            .bold()
+                            .font(.title)
+                    )
             })
+            
+            .onAppear {
+                Task {
+                    do {
+                        viewModel.profileData = try await FirebaseClient.getProfileViewData(uid: Auth.auth().currentUser!.uid)
+                        
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
             
         }
     }
-}
-
-#Preview {
-    LoadIntoNFC(viewModel: .init())
 }

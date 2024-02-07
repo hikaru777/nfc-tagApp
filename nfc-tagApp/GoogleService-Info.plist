@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.swift.tech.Hikaru.Honda.nfc-tagApp</string>
+	<string>com.swift.tech.Hikaru.Honda.nfc-tag</string>
 	<key>PROJECT_ID</key>
 	<string>nfctagproject</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:387391264426:ios:a6c6ac91702741729f22d3</string>
+	<string>1:387391264426:ios:9965972f304d749c9f22d3</string>
 </dict>
 </plist>

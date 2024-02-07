@@ -21,15 +21,15 @@ enum Tab: Int, CaseIterable {
         switch self {
         case .setting:
 //            return "mappin.and.ellipse.circle"
-            return "person.circle"
+            return "arrow.down.doc"
         case .playing:
 //            if MPMusicPlayerController.applicationMusicPlayer.playbackState == .paused {
-                return "play"
+                return "sensor.tag.radiowaves.forward"
 //            } else {
 //                return "pause"
 //            }
         case .list:
-            return "music.note"
+            return "doc.on.doc"
         }
         
         
@@ -39,15 +39,15 @@ enum Tab: Int, CaseIterable {
         switch self {
         case .setting:
 //            return "mappin.and.ellipse.circle.fill"
-            return "person.circle.fill"
+            return "arrow.down.doc.fill"
         case .playing:
 //            if MPMusicPlayerController.applicationMusicPlayer.playbackState == .paused {
-                return "play.fill"
+                return "sensor.tag.radiowaves.forward.fill"
 //            } else {
 //                return "pause.fill"
 //            }
         case .list:
-            return "music.note.list"
+            return "doc.on.doc.fill"
         }
     }
     

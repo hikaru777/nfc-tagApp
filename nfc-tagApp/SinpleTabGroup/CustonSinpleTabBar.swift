@@ -113,7 +113,7 @@ struct TabButton: View {
                     ZStack{
                         if currentTab == tab {
                             Circle()
-                                .fill(Color(.purple))
+                                .fill(.blue.opacity(0.4))
                                 .matchedGeometryEffect(id: "TAB", in: animation)
                         }
                     }
