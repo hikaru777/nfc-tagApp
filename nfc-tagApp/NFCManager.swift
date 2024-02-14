@@ -11,6 +11,7 @@ class NFCManager: NSObject {
     private var writeHandler: (() -> Void)?
     private var readHandler: ((String?) -> Void)!
     
+
     func write(text: String, handler: (() -> Void)? = nil) {
         writeHandler = handler
         isWriting = true
