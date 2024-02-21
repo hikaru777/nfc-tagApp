@@ -52,7 +52,7 @@ struct CustomSimpleTab: View {
                     }
                     .tag(Tab.playing)
                 
-                SwiftUIView()
+//                SwiftUIView()
                     .background {
                         LinearGradient(
                             gradient: Gradient(colors: [Color.pink.opacity(0.6),Color.blue]),   // start地点の色とend地点の色

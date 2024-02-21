@@ -30,7 +30,6 @@
 		5D063A4D2B612637003C3E9D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A432B612637003C3E9D /* MainView.swift */; };
 		5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */; };
 		5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */; };
-		5D5AA7362B70B3B0003E196D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA7352B70B3B0003E196D /* SwiftUIView.swift */; };
 		5D5AA7372B70B4EE003E196D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A1F2B61251B003C3E9D /* Assets.xcassets */; };
 		5D5AA7382B70B4F2003E196D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A222B61251B003C3E9D /* Preview Assets.xcassets */; };
 		5D5AA73A2B70C0B6003E196D /* ShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA7392B70C0B6003E196D /* ShotView.swift */; };
@@ -68,7 +67,6 @@
 		5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteIntoNFCViewModel.swift; sourceTree = "<group>"; };
 		5D063A522B62AD63003C3E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D063A542B62B1A4003C3E9D /* nfc-tagApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nfc-tagApp.entitlements"; sourceTree = "<group>"; };
-		5D5AA7352B70B3B0003E196D /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = ../../../../Downloads/slide/slide/SwiftUIView.swift; sourceTree = "<group>"; };
 		5D5AA7392B70C0B6003E196D /* ShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotView.swift; sourceTree = "<group>"; };
 		5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerView.swift; sourceTree = "<group>"; };
 		5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCompactMap.swift; sourceTree = "<group>"; };
@@ -156,13 +154,12 @@
 		5D063A402B612637003C3E9D /* ViewGroup */ = {
 			isa = PBXGroup;
 			children = (
+				5D063A432B612637003C3E9D /* MainView.swift */,
 				5D01DFEF2B708FFC0042FE5E /* ContentView.swift */,
 				5D01DFF62B70939C0042FE5E /* NextView.swift */,
-				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
-				5D5AA7352B70B3B0003E196D /* SwiftUIView.swift */,
-				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
 				5D5AA7392B70C0B6003E196D /* ShotView.swift */,
-				5D063A432B612637003C3E9D /* MainView.swift */,
+				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
+				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
 				5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */,
 			);
 			path = ViewGroup;
@@ -292,7 +289,6 @@
 				5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */,
 				5D063A472B612637003C3E9D /* CustomSinpleTab.swift in Sources */,
 				5D063A3A2B612616003C3E9D /* NFCManager.swift in Sources */,
-				5D5AA7362B70B3B0003E196D /* SwiftUIView.swift in Sources */,
 				5D063A482B612637003C3E9D /* TabModel.swift in Sources */,
 				5D063A4C2B612637003C3E9D /* WriteIntoNFC.swift in Sources */,
 				5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */,
@@ -442,7 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nfc-tagApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VQ7U9Z9U2;
+				DEVELOPMENT_TEAM = F584ZURPSX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nfc-tagApp/Info.plist";
@@ -459,7 +455,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.tech.Hikaru.Honda.nfc-tag";
+				PRODUCT_BUNDLE_IDENTIFIER = "aoba.nfc-tagApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -478,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nfc-tagApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VQ7U9Z9U2;
+				DEVELOPMENT_TEAM = F584ZURPSX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nfc-tagApp/Info.plist";
@@ -495,7 +491,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.tech.Hikaru.Honda.nfc-tag";
+				PRODUCT_BUNDLE_IDENTIFIER = "aoba.nfc-tagApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

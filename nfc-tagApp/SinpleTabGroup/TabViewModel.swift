@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class TabViewModel: NSObject, ObservableObject {
-    
+
     @Published var inputTextField: String = ""
-    
+
 }

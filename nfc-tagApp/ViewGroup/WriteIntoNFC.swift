@@ -13,9 +13,7 @@ struct WriteIntoNFC: View {
     var body: some View {
         
         VStack {
-            
-//            TextField("", text: $viewModel.inputTextField)
-            
+            //            TextField("", text: $viewModel.inputTextField)
             Button(action: {
                 NFCManager.shared.write(text: "viewModel.inputTextField")
             },

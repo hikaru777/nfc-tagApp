@@ -9,6 +9,7 @@ import SwiftUI
 import Kingfisher
 import FirebaseAuth
 
+//読み込み画面
 struct LoadIntoNFC: View {
     
     @ObservedObject var viewModel: ReadIntoNFCViewModel
@@ -64,7 +65,7 @@ struct LoadIntoNFC: View {
                             .font(.title)
                     )
             })
-            
+
             .onAppear {
                 Task {
                     do {

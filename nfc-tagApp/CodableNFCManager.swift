@@ -14,15 +14,15 @@ struct TagData: Codable {
 }
 
 class CodableNFCManager: NSObject {
-    
+
     static let shared = CodableNFCManager()
-    
+
     private var session: NFCNDEFReaderSession!
     private var isWriting = false
     private var ndefMessage: NFCNDEFMessage!
     private var writeHandler: (() -> Void)?
     private var readHandler: ((TagData?) -> Void)!
-    
+
     func write(tagData: TagData, _ handler: (() -> Void)? = nil) {
         writeHandler = handler
         isWriting = true
@@ -35,13 +35,13 @@ class CodableNFCManager: NSObject {
         ndefMessage = NFCNDEFMessage(records: [textPayload])
         startSession()
     }
-    
+
     func read(_ handler: @escaping ((TagData?) -> Void)) {
         self.readHandler = handler
         isWriting = false
         startSession()
     }
-    
+
     private func startSession() {
         guard NFCNDEFReaderSession.readingAvailable else {
             return
@@ -53,16 +53,16 @@ class CodableNFCManager: NSObject {
 }
 
 extension CodableNFCManager: NFCNDEFReaderSessionDelegate {
-    
+
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
     }
-    
+
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
     }
-    
+
     func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) {
     }
-    
+
     func readerSession(_ session: NFCNDEFReaderSession, didDetect tags: [NFCNDEFTag]) {
         let tag = tags.first!
         session.connect(to: tag) { error in
@@ -75,7 +75,7 @@ extension CodableNFCManager: NFCNDEFReaderSessionDelegate {
             }
         }
     }
-    
+
     private func write(tag: NFCNDEFTag, session: NFCNDEFReaderSession) {
         tag.writeNDEF(self.ndefMessage) { [unowned self] error in
             session.alertMessage = "書き込み完了"
@@ -85,7 +85,7 @@ extension CodableNFCManager: NFCNDEFReaderSessionDelegate {
             }
         }
     }
-    
+
     private func read(tag: NFCNDEFTag, session: NFCNDEFReaderSession) {
         tag.readNDEF { [unowned self] message, error in
             session.alertMessage = "読み込み完了"

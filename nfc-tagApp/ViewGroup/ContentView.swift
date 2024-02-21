@@ -4,7 +4,7 @@ import FirebaseAuth
 import UIKit
 import PhotosUI
 
-
+//マイプロフィール画面
 extension UIView {
     func snapshot() -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: bounds.size)
@@ -16,33 +16,35 @@ extension UIView {
 }
 
 struct ContentView: View, SendProfileOKDelegate {
-    
+
     @StateObject var viewModel: WriteIntoNFCViewModel
     @State var isPresented: Bool = false
-    
+
     var body: some View {
         VStack(spacing: 15) {
-            
+
             VStack(alignment: .leading, spacing: 10) {
-                
+
                 Text("Your profile")
                     .foregroundStyle(.white)
                     .font(.title)
                     .bold()
-                
+ 
                 if viewModel.decidedProfileImageUrl != "" {
-                    
+
                     KFImage(URL(string: viewModel.decidedProfileImageUrl))
                         .resizable()
+
                         .scaledToFit()
-                        .frame(width: 310, height: 550)
+                        .frame(width: 310, height: 550)//viewサイズ
                         .background(Color.white)
                         .cornerRadius(21)
+                        .aspectRatio(contentMode: .fit)
                         .onTapGesture {
                             viewModel.opacity = 100
                             isPresented = true
                         }
-                    
+
                 } else {
                     Image("Image 1")
                         .resizable()
@@ -55,9 +57,9 @@ struct ContentView: View, SendProfileOKDelegate {
                             isPresented = true
                         }
                 }
-                
+
             }
-            
+
             Button(action: {
                 NFCManager.shared.write(text: viewModel.uid)
             }) {
@@ -99,13 +101,13 @@ struct ContentView: View, SendProfileOKDelegate {
             }
         }
     }
-    
+
     func sendProfileOKDelegate(url: String) {
         viewModel.decidedProfileImageUrl = url
         if viewModel.imageUrl == nil {
             print("enpty")
         }
     }
-    
+
 }
 
