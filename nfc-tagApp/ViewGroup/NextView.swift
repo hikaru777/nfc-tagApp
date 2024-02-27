@@ -26,6 +26,7 @@ struct NextView: View, SendProfileOKDelegate {
     @FocusState var focus: Bool
 
     var body: some View {
+
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
 
@@ -67,6 +68,27 @@ struct NextView: View, SendProfileOKDelegate {
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(TextAlignment.center)
 
+                HStack{
+                    Text("あ")
+                        .font(Font.custom("Anonymous Pro", size: 30))
+                        .multilineTextAlignment(.trailing)
+                        .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                        .rotationEffect(Angle(degrees: -16))
+
+                    Text("お")
+                        .font(Font.custom("Anonymous Pro", size: 30))
+                        .multilineTextAlignment(.trailing)
+                        .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                        .rotationEffect(Angle(degrees: -0.37))
+                        .padding(.top, -10)
+
+                    Text("ば")
+                        .font(Font.custom("Anonymous Pro", size: 30))
+                        .multilineTextAlignment(.trailing)
+                        .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                        .rotationEffect(Angle(degrees: 16))
+                }
+
                 if viewModel.imageUrl == URL(string: "") {
 
                     Button {
@@ -81,9 +103,7 @@ struct NextView: View, SendProfileOKDelegate {
                             .shadow(color: .gray.opacity(0.5), radius: 13, x: 0, y: 0)
                             .padding(.top, -50)
                     }
-
                 } else {
-
                     Button {
                         showImagePickerView.toggle()
                     } label: {
@@ -104,10 +124,11 @@ struct NextView: View, SendProfileOKDelegate {
                         self.showOptions.toggle()
                     }) {
                         Text("コースを選択")
-                            .padding()
+                            .padding(.all, 6)
                             .foregroundColor(.white)
                             .background(Color.blue)
                             .cornerRadius(10)
+                            .font(Font.custom("SF Pro", size: 12))
                     }
 
                     if showOptions {
@@ -141,17 +162,9 @@ struct NextView: View, SendProfileOKDelegate {
                     }
                 }
 
-
                 Image("Line 3")
                     .frame(width: 400, height: 0.5)
                     .padding(.top, 16)
-
-                //                Text("自己紹介")
-                //                    .font(.system(.title,design:.monospaced))
-                //                    .fontWeight(.black)
-                //                    .font(.title3)
-                //                    .foregroundColor(.gray)
-                //                    .padding(.top, 20)
 
                 TextEditor(text: $editorText)
                     .frame(width: 320, height: 240)
