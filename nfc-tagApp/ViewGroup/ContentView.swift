@@ -29,14 +29,14 @@ struct ContentView: View, SendProfileOKDelegate {
                     .foregroundStyle(.white)
                     .font(.title)
                     .bold()
- 
+
                 if viewModel.decidedProfileImageUrl != "" {
 
                     KFImage(URL(string: viewModel.decidedProfileImageUrl))
                         .resizable()
 
                         .scaledToFit()
-                        .frame(width: 310, height: 550)//viewサイズ
+                        .frame(width: 300, height: 500)//viewサイズ
                         .background(Color.white)
                         .cornerRadius(21)
                         .aspectRatio(contentMode: .fit)
@@ -49,7 +49,7 @@ struct ContentView: View, SendProfileOKDelegate {
                     Image("Image 1")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 310, height: 550)
+                        .frame(width: 300, height: 500)
                         .background(Color.white)
                         .cornerRadius(21)
                         .onTapGesture {

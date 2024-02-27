@@ -32,7 +32,6 @@
 		5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */; };
 		5D5AA7372B70B4EE003E196D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A1F2B61251B003C3E9D /* Assets.xcassets */; };
 		5D5AA7382B70B4F2003E196D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A222B61251B003C3E9D /* Preview Assets.xcassets */; };
-		5D5AA73A2B70C0B6003E196D /* ShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA7392B70C0B6003E196D /* ShotView.swift */; };
 		5D5AA73C2B70D803003E196D /* UIImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */; };
 		5D5AA73E2B7124C3003E196D /* AsyncCompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */; };
 		5DC711D82B62B4DE00257AF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */; };
@@ -67,7 +66,6 @@
 		5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteIntoNFCViewModel.swift; sourceTree = "<group>"; };
 		5D063A522B62AD63003C3E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D063A542B62B1A4003C3E9D /* nfc-tagApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nfc-tagApp.entitlements"; sourceTree = "<group>"; };
-		5D5AA7392B70C0B6003E196D /* ShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotView.swift; sourceTree = "<group>"; };
 		5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerView.swift; sourceTree = "<group>"; };
 		5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCompactMap.swift; sourceTree = "<group>"; };
 		5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				5D063A432B612637003C3E9D /* MainView.swift */,
 				5D01DFEF2B708FFC0042FE5E /* ContentView.swift */,
 				5D01DFF62B70939C0042FE5E /* NextView.swift */,
-				5D5AA7392B70C0B6003E196D /* ShotView.swift */,
 				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
 				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
 				5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */,
@@ -296,7 +293,6 @@
 				5D01DFFB2B7097A90042FE5E /* ChangeImageSize.swift in Sources */,
 				5D063A4D2B612637003C3E9D /* MainView.swift in Sources */,
 				5D01DFF22B70900F0042FE5E /* SendToDB.swift in Sources */,
-				5D5AA73A2B70C0B6003E196D /* ShotView.swift in Sources */,
 				5D063A492B612637003C3E9D /* TabViewModel.swift in Sources */,
 				5DEA0B322B6A51E60040F2E3 /* FirebaseClient.swift in Sources */,
 				5D5AA73C2B70D803003E196D /* UIImagePickerView.swift in Sources */,

@@ -17,6 +17,11 @@ struct NextView: View, SendProfileOKDelegate {
     @State var image: UIImage?
     @State var showImagePickerView = false
     @State var name: String = ""
+
+    @State var ininputText: String = ""
+    @State private var showOptions: Bool = false
+    @State private var selectedOption: String?
+
     @State var editorText: String = ""
     @FocusState var focus: Bool
 
@@ -43,12 +48,24 @@ struct NextView: View, SendProfileOKDelegate {
                 .padding(.top, 10)
                 .opacity(Double(viewModel.opacity))
 
+                //名前の文字数を取得したいけどわからなかった
+                //                VStack {
+                //                    TextField("Enter text", text: $ininputText)
+                //                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                //                        .padding()
+                //
+                //                    Text("Character Count: \($inputText.count)")
+                //                        .padding()
+                //                }
+
                 TextField("名前！", text: $name)
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
                     .padding(.horizontal, 20)
+                    .font(.system(size: 30.0))
                     .textFieldStyle(.roundedBorder)
+                    .multilineTextAlignment(TextAlignment.center)
 
                 if viewModel.imageUrl == URL(string: "") {
 
@@ -72,31 +89,77 @@ struct NextView: View, SendProfileOKDelegate {
                     } label: {
                         KFImage(viewModel.imageUrl)
                             .resizable()
-//                            .scaledToFill()
+                        //                            .scaledToFill()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 100)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.gray, lineWidth: 2))
                             .shadow(color: .gray.opacity(0.5), radius: 13, x: 0, y: 0)
-//                            .padding(.top, -50)
                     }
-
                 }
 
-                Text("自己紹介")
-                    .font(.system(.title,design:.monospaced))
-                    .fontWeight(.black)
-                    .font(.title3)
-                    .foregroundColor(.gray)
-                    .padding(.top, 20)
+                //ボタンを押すと選択肢を表示
+                VStack {
+                    Button(action: {
+                        self.showOptions.toggle()
+                    }) {
+                        Text("コースを選択")
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+
+                    if showOptions {
+                        VStack {
+                            Text("君のコースは")
+                            Button(action: {
+                                self.selectedOption = "WebD"
+                                self.showOptions.toggle()
+                            }) {
+                                Text("WebD")
+                                //                                Image("WebD")
+                            }
+                            Button(action: {
+                                self.selectedOption = "iPhone"
+                                self.showOptions.toggle()
+                            }) {
+                                Text("iPhone")
+                            }
+                            Button(action: {
+                                self.selectedOption = "Unity"
+                                self.showOptions.toggle()
+                            }) {
+                                Text("Unity")
+                            }
+                        }
+
+                    }
+
+                    if let selectedOption = selectedOption {
+                        Text(" \(selectedOption)")
+                    }
+                }
+
+
+                Image("Line 3")
+                    .frame(width: 400, height: 0.5)
+                    .padding(.top, 16)
+
+                //                Text("自己紹介")
+                //                    .font(.system(.title,design:.monospaced))
+                //                    .fontWeight(.black)
+                //                    .font(.title3)
+                //                    .foregroundColor(.gray)
+                //                    .padding(.top, 20)
 
                 TextEditor(text: $editorText)
-                    .frame(width: 320, height: 320)
+                    .frame(width: 320, height: 240)
                     .scrollContentBackground(.hidden)
                     .background(.white, in: RoundedRectangle(cornerRadius: 30.0))
                     .padding()
                     .multilineTextAlignment(.center)
-                    .shadow(color: .gray.opacity(0.5), radius: 13, x: 0, y: 0)
+                    .shadow(color: .gray.opacity(0.2), radius: 13, x: 0, y: 0)
                     .padding(.horizontal, 20)
                     .padding(.top, 10)
                     .padding(.bottom, 10)
@@ -104,12 +167,22 @@ struct NextView: View, SendProfileOKDelegate {
                     .focused($focus)
                     .toolbar {
                         ToolbarItemGroup(placement: .keyboard) {
-                            Spacer()         // 右寄せにする
+                            Spacer()
                             Button("閉じる") {
-                                focus = false  //  フォーカスを外す
+                                focus = false
                             }
                         }
                     }
+                //何も入力されていない時に、入力補助をしたかったけどわからん
+                //                    .overlay(alignment: .topLeading) {
+                //
+                //                        if inputText.isEmpty {
+                //                            Text("Please enter some text.")
+                //                                .foregroundColor(.red)
+                //                        } else {
+                //                            Text("Text entered: \(inputText)")
+                //                        }
+                //                    }
 
                 Button(action: {
                     UserDefaults.standard.set(name, forKey: "name")
@@ -199,9 +272,7 @@ struct NextView: View, SendProfileOKDelegate {
     }
 
     func changeColorByTransparent(imgView: UIImage, cMask: [CGFloat]) -> UIImage? {
-
         var returnImage: UIImage?
-
         let sz = imgView.size
 
         UIGraphicsBeginImageContextWithOptions(sz, true, 0.0)
@@ -210,13 +281,10 @@ struct NextView: View, SendProfileOKDelegate {
         UIGraphicsEndImageContext()
 
         let noAlphaCGRef = noAlphaImage?.cgImage
-
         if let imgRefCopy = noAlphaCGRef?.copy(maskingColorComponents: cMask) {
-
             returnImage = UIImage(cgImage: imgRefCopy)
-
         }
-        
+
 
         return returnImage
 
