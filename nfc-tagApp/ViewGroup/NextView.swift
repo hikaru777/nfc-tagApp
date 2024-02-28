@@ -58,27 +58,131 @@ struct NextView: View, SendProfileOKDelegate {
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(TextAlignment.center)
 
-                Text(" \(name.count)")
+                switch name.count {
+                case 1:
+                    HStack{
+                        Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                    }
+                    .padding(.bottom, -4)
 
-                HStack{
-                    Text("あ")
-                        .font(Font.custom("Anonymous Pro", size: 30))
-                        .multilineTextAlignment(.trailing)
-                        .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
-                        .rotationEffect(Angle(degrees: -16))
+                case 2:
+                    HStack{
+                        Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: -6))
 
-                    Text("お")
-                        .font(Font.custom("Anonymous Pro", size: 30))
-                        .multilineTextAlignment(.trailing)
-                        .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
-                        .rotationEffect(Angle(degrees: -0.37))
-                        .padding(.top, -10)
+                        Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 6))
+                    }
+                    .padding(.bottom, -4)
 
-                    Text("ば")
-                        .font(Font.custom("Anonymous Pro", size: 30))
-                        .multilineTextAlignment(.trailing)
-                        .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
-                        .rotationEffect(Angle(degrees: 16))
+                case 3:
+                    HStack{
+                        Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: -18))
+                            .padding(.trailing, -4)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 0))
+                            .padding(.top, -10)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 2)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 18))
+                            .padding(.leading, -4)
+                    }
+                    .padding(.bottom, -6)
+
+                case 4:
+                    HStack{
+                        Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: -30))
+                            .padding(.trailing, -4)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: -9))
+                            .padding(.top, -24)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 2)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 9))
+                            .padding(.top, -24)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 3)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 30))
+                            .padding(.leading, -4)
+                    }
+                    .padding(.bottom, -14)
+
+                case 5:
+                    HStack{
+                        Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: -40))
+                            .padding(.trailing, -8)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: -18))
+                            .padding(.top, -30)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 2)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 0))
+                            .padding(.top, -36)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 3)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 18))
+                            .padding(.top, -30)
+
+                        Text(String(name[name.index(name.startIndex, offsetBy: 4)]))
+                            .font(Font.custom("SF Pro", size: 20))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+                            .rotationEffect(Angle(degrees: 40))
+                            .padding(.leading, -8)
+                    }
+                    .padding(.bottom, -32)
+
+                default:
+                    EmptyView()
+
                 }
 
                 if viewModel.imageUrl == URL(string: "") {
@@ -101,7 +205,6 @@ struct NextView: View, SendProfileOKDelegate {
                     } label: {
                         KFImage(viewModel.imageUrl)
                             .resizable()
-                        //                            .scaledToFill()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 100)
                             .clipShape(Circle())
@@ -112,10 +215,8 @@ struct NextView: View, SendProfileOKDelegate {
 
                 //ボタンを押すと選択肢を表示
                 VStack {
-                    
                     Button(action: {
                         self.showOptions.toggle()
-//                        self.showOptions = false
                     }) {
                         Text("コースを選択")
                             .padding(.all, 6)
@@ -151,7 +252,6 @@ struct NextView: View, SendProfileOKDelegate {
                     }
 
                     if let selectedOption = selectedOption {
-                        //                        Text("\(selectedOption)")
                         Image("\(selectedOption)")
                             .frame(width: 50, height: 50)
                     }
@@ -162,7 +262,7 @@ struct NextView: View, SendProfileOKDelegate {
                     .padding(.top, 16)
 
                 TextEditor(text: $editorText)
-                    .frame(width: 320, height: 240)
+                    .frame(width: 320, height: 200)
                     .scrollContentBackground(.hidden)
                     .background(.white, in: RoundedRectangle(cornerRadius: 30.0))
                     .padding()
@@ -181,15 +281,6 @@ struct NextView: View, SendProfileOKDelegate {
                             }
                         }
                     }
-
-                //                .overlay(alignment: .topLeading) {
-                //                    if ininputText.isEmpty {
-                //                        Text("Please enter some text.")
-                //                            .foregroundColor(.red)
-                //                    } else {
-                //                        Text("Text entered: \(ininputText)")
-                //                    }
-                //                }
 
 
                 Button(action: {
