@@ -156,8 +156,8 @@
 				5D01DFEF2B708FFC0042FE5E /* ContentView.swift */,
 				5D01DFF62B70939C0042FE5E /* NextView.swift */,
 				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
-				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
 				5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */,
+				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
 			);
 			path = ViewGroup;
 			sourceTree = "<group>";

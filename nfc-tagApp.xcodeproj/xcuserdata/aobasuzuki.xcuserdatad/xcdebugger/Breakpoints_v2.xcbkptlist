@@ -14,8 +14,8 @@
             filePath = "nfc-tagApp/ViewGroup/NextView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -112,8 +112,311 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A5E6F70-AB51-49B8-9511-2FC274B8AFC2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewGroup/LoadIntoNFC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65B77D2E-64EA-4475-A7B2-43994362E9E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B52158C0-1777-47B8-B72F-65A14146DCEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "B52158C0-1777-47B8-B72F-65A14146DCEA - 9fbb84196b45741c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "B52158C0-1777-47B8-B72F-65A14146DCEA - 6d234ca90164c6f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD4A6AEC-8F7B-4704-ADCD-AD966EEEAE59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "FD4A6AEC-8F7B-4704-ADCD-AD966EEEAE59 - 9fbb84196b45741c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "FD4A6AEC-8F7B-4704-ADCD-AD966EEEAE59 - 6d234ca90164c6f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EFB47F7-3E8E-4920-94D0-50D94AB9DA86"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "0EFB47F7-3E8E-4920-94D0-50D94AB9DA86 - 6d234ca90164c6f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "0EFB47F7-3E8E-4920-94D0-50D94AB9DA86 - d1233517ccc1d898"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31A9E20E-9596-4720-A923-CEA6000011D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "31A9E20E-9596-4720-A923-CEA6000011D4 - 6d234ca90164c6f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "31A9E20E-9596-4720-A923-CEA6000011D4 - d1233517ccc1d898"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in nfc_tagApp.WriteIntoNFC.body.getter : some"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2E2AE9C-2785-4ADA-A8AC-2B9796DC0177"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewGroup/WriteIntoNFC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "508DB3F8-9E6D-4E84-A9CB-703D581DDDAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nfc-tagApp/ViewModelGroup/ReadIntoNFCViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ReadIntoNFCViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "508DB3F8-9E6D-4E84-A9CB-703D581DDDAC - 4bd044601ac95b41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nfc_tagApp.ReadIntoNFCViewModel.__allocating_init() -&gt; nfc_tagApp.ReadIntoNFCViewModel"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewModelGroup/ReadIntoNFCViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "508DB3F8-9E6D-4E84-A9CB-703D581DDDAC - e7fe5dee69cfcb20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nfc_tagApp.ReadIntoNFCViewModel.init() -&gt; nfc_tagApp.ReadIntoNFCViewModel"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "508DB3F8-9E6D-4E84-A9CB-703D581DDDAC - 7dd3abe95c786b9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nfc_tagApp.ReadIntoNFCViewModel.__deallocating_deinit"
+                  moduleName = "nfc-tagApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aobasuzuki/nfc-tagApp/nfc-tagApp/ViewModelGroup/ReadIntoNFCViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

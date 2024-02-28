@@ -38,7 +38,7 @@ struct NextView: View, SendProfileOKDelegate {
                     } label: {
                         Image(systemName: "x.circle.fill")
                             .resizable()
-                            .frame(width: 30, height: 30)
+                            .frame(width: 24, height: 24)
                             .foregroundStyle(.white, .gray)
                     }
 
@@ -49,16 +49,6 @@ struct NextView: View, SendProfileOKDelegate {
                 .padding(.top, 10)
                 .opacity(Double(viewModel.opacity))
 
-                //名前の文字数を取得したいけどわからなかった
-                //                VStack {
-                //                    TextField("Enter text", text: $ininputText)
-                //                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                //                        .padding()
-                //
-                //                    Text("Character Count: \($inputText.count)")
-                //                        .padding()
-                //                }
-
                 TextField("名前！", text: $name)
                     .padding()
                     .background(Color.white)
@@ -67,6 +57,8 @@ struct NextView: View, SendProfileOKDelegate {
                     .font(.system(size: 30.0))
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(TextAlignment.center)
+
+                Text(" \(name.count)")
 
                 HStack{
                     Text("あ")
@@ -99,7 +91,7 @@ struct NextView: View, SendProfileOKDelegate {
                             .scaledToFill()
                             .frame(width: 300)
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.gray, lineWidth: 4))
+                            .overlay(Circle().stroke(Color.white, lineWidth: 1))
                             .shadow(color: .gray.opacity(0.5), radius: 13, x: 0, y: 0)
                             .padding(.top, -50)
                     }
@@ -120,8 +112,10 @@ struct NextView: View, SendProfileOKDelegate {
 
                 //ボタンを押すと選択肢を表示
                 VStack {
+                    
                     Button(action: {
                         self.showOptions.toggle()
+//                        self.showOptions = false
                     }) {
                         Text("コースを選択")
                             .padding(.all, 6)
@@ -139,7 +133,6 @@ struct NextView: View, SendProfileOKDelegate {
                                 self.showOptions.toggle()
                             }) {
                                 Text("WebD")
-                                //                                Image("WebD")
                             }
                             Button(action: {
                                 self.selectedOption = "iPhone"
@@ -158,7 +151,9 @@ struct NextView: View, SendProfileOKDelegate {
                     }
 
                     if let selectedOption = selectedOption {
-                        Text(" \(selectedOption)")
+                        //                        Text("\(selectedOption)")
+                        Image("\(selectedOption)")
+                            .frame(width: 50, height: 50)
                     }
                 }
 
@@ -186,16 +181,16 @@ struct NextView: View, SendProfileOKDelegate {
                             }
                         }
                     }
-                //何も入力されていない時に、入力補助をしたかったけどわからん
-                //                    .overlay(alignment: .topLeading) {
-                //
-                //                        if inputText.isEmpty {
-                //                            Text("Please enter some text.")
-                //                                .foregroundColor(.red)
-                //                        } else {
-                //                            Text("Text entered: \(inputText)")
-                //                        }
+
+                //                .overlay(alignment: .topLeading) {
+                //                    if ininputText.isEmpty {
+                //                        Text("Please enter some text.")
+                //                            .foregroundColor(.red)
+                //                    } else {
+                //                        Text("Text entered: \(ininputText)")
                 //                    }
+                //                }
+
 
                 Button(action: {
                     UserDefaults.standard.set(name, forKey: "name")
@@ -260,10 +255,6 @@ struct NextView: View, SendProfileOKDelegate {
 
                     do {
                         let data = try await FirebaseClient.getProfileViewData(uid: Auth.auth().currentUser!.uid)
-
-                        //                        let maskColor:[CGFloat] = [255, 255, 255, 255, 255, 255]
-                        //
-                        //                        let withoutWhiteImage = changeColorByTransparent(imgView: viewModel.capturedImage!, cMask: maskColor)
 
                         let imageUrl = await viewModel.sendToDBModel.uploadProfileViewImage(image: viewModel.capturedImage!)
                         try await FirebaseClient.setImage(uid: Auth.auth().currentUser!.uid, imageUrl: ImageData(imageUrl: imageUrl!.cacheKey, gotAccounts: data.gotAccounts ))

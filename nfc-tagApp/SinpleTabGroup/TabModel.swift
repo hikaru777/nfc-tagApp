@@ -20,14 +20,9 @@ enum Tab: Int, CaseIterable {
     var symbolName: String {
         switch self {
         case .setting:
-            //            return "mappin.and.ellipse.circle"
             return "arrow.down.doc"
         case .playing:
-            //            if MPMusicPlayerController.applicationMusicPlayer.playbackState == .paused {
             return "sensor.tag.radiowaves.forward"
-            //            } else {
-            //                return "pause"
-            //            }
         case .list:
             return "doc.on.doc"
         }
@@ -38,14 +33,9 @@ enum Tab: Int, CaseIterable {
     var symbolFillName: String {
         switch self {
         case .setting:
-            //            return "mappin.and.ellipse.circle.fill"
             return "arrow.down.doc.fill"
         case .playing:
-            //            if MPMusicPlayerController.applicationMusicPlayer.playbackState == .paused {
             return "sensor.tag.radiowaves.forward.fill"
-            //            } else {
-            //                return "pause.fill"
-            //            }
         case .list:
             return "doc.on.doc.fill"
         }
@@ -65,6 +55,5 @@ enum Tab: Int, CaseIterable {
     static var count: CGFloat {
         return CGFloat(Tab.allCases.count)
     }
-
 
 }

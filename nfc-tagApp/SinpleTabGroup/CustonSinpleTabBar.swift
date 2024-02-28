@@ -27,9 +27,6 @@ struct CustomSimpleTabBar: View {
                     withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.4, blendDuration: 0.4)){
                         startAnimation = true
                     }
-                    //                    withAnimation(.interactiveSpring(response: 0.7, dampingFraction: 0.8, blendDuration: 0.8)){
-                    //                        startAnimation = true
-                    //                    }
 
                     DispatchQueue.main.asyncAfter(deadline: .now() ) {
 
@@ -48,33 +45,6 @@ struct CustomSimpleTabBar: View {
                 }
             }
         }
-        //        .background(
-        //
-        //            ZStack{
-        //
-        //                let animationOffset: CGFloat = (startAnimation ? (startAnimation ? 15 : 18) : (bottomEdge == 0 ? 26 : 27))
-        //                let offset : CGSize = bottomEdge == 0 ? CGSize(width: animationOffset, height: 31) : CGSize(width: animationOffset, height: 36)
-        //
-        //                Rectangle()
-        //                    .fill(.purple)
-        //                    .frame(width: 30, height: 45)
-        //                    .offset(y: 40)
-        //
-        //                Circle()
-        //                    .fill(.gray)
-        //                    .frame(width: 45, height: 45)
-        //                    .scaleEffect(bottomEdge == 0 ? 0.8 : 1)
-        //                    .offset(x: offset.width, y: offset.height)
-        //                Circle()
-        //                    .fill(.gray)
-        //                    .frame(width: 45, height: 45)
-        //                    .scaleEffect(bottomEdge == 0 ? 0.8 : 1)
-        //                    .offset(x: -offset.width, y: offset.height)
-        //            }
-        //                .offset(x: getStartOffset())
-        //                .offset(x: getOffset())
-        //            ,alignment: .leading
-        //        )
         .padding(.horizontal,15)
         .padding(.top, 7)
         .padding(.bottom,bottomEdge == 0 ? 23 : bottomEdge)
