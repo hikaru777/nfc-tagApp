@@ -26,7 +26,6 @@
 		5D063A492B612637003C3E9D /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A3E2B612637003C3E9D /* TabViewModel.swift */; };
 		5D063A4A2B612637003C3E9D /* CustonSinpleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A3F2B612637003C3E9D /* CustonSinpleTabBar.swift */; };
 		5D063A4B2B612637003C3E9D /* LoadIntoNFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A412B612637003C3E9D /* LoadIntoNFC.swift */; };
-		5D063A4C2B612637003C3E9D /* WriteIntoNFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A422B612637003C3E9D /* WriteIntoNFC.swift */; };
 		5D063A4D2B612637003C3E9D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A432B612637003C3E9D /* MainView.swift */; };
 		5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */; };
 		5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */; };
@@ -60,7 +59,6 @@
 		5D063A3E2B612637003C3E9D /* TabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		5D063A3F2B612637003C3E9D /* CustonSinpleTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustonSinpleTabBar.swift; sourceTree = "<group>"; };
 		5D063A412B612637003C3E9D /* LoadIntoNFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadIntoNFC.swift; sourceTree = "<group>"; };
-		5D063A422B612637003C3E9D /* WriteIntoNFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteIntoNFC.swift; sourceTree = "<group>"; };
 		5D063A432B612637003C3E9D /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5D063A452B612637003C3E9D /* ReadIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadIntoNFCViewModel.swift; sourceTree = "<group>"; };
 		5D063A462B612637003C3E9D /* WriteIntoNFCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteIntoNFCViewModel.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				5D01DFF62B70939C0042FE5E /* NextView.swift */,
 				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
 				5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */,
-				5D063A422B612637003C3E9D /* WriteIntoNFC.swift */,
 			);
 			path = ViewGroup;
 			sourceTree = "<group>";
@@ -287,7 +284,6 @@
 				5D063A472B612637003C3E9D /* CustomSinpleTab.swift in Sources */,
 				5D063A3A2B612616003C3E9D /* NFCManager.swift in Sources */,
 				5D063A482B612637003C3E9D /* TabModel.swift in Sources */,
-				5D063A4C2B612637003C3E9D /* WriteIntoNFC.swift in Sources */,
 				5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */,
 				5D01DFF72B70939C0042FE5E /* NextView.swift in Sources */,
 				5D01DFFB2B7097A90042FE5E /* ChangeImageSize.swift in Sources */,

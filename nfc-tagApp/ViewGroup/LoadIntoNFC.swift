@@ -11,22 +11,22 @@ import FirebaseAuth
 
 //読み込み画面
 struct LoadIntoNFC: View {
-    
+
     @ObservedObject var viewModel: ReadIntoNFCViewModel
-    
+
     var body: some View {
-        
+
         VStack(spacing: 15) {
-            
+
             if viewModel.imageUrl != "" {
-                
+
                 KFImage(URL(string: viewModel.imageUrl))
                     .resizable()
                     .scaledToFit()
                     .frame(width: 310, height: 550)
                     .background(Color.white)
                     .cornerRadius(21)
-                
+
             }
             Button(action: {
                 NFCManager.shared.read { text in
@@ -70,13 +70,13 @@ struct LoadIntoNFC: View {
                 Task {
                     do {
                         viewModel.profileData = try await FirebaseClient.getProfileViewData(uid: Auth.auth().currentUser!.uid)
-                        
+
                     } catch {
                         print(error.localizedDescription)
                     }
                 }
             }
-            
+
         }
     }
 }

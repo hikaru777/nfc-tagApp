@@ -34,9 +34,8 @@ struct ContentView: View, SendProfileOKDelegate {
 
                     KFImage(URL(string: viewModel.decidedProfileImageUrl))
                         .resizable()
-
                         .scaledToFit()
-                        .frame(width: 300, height: 500)//viewサイズ
+                        .frame(width: 300, height: 500)
                         .background(Color.white)
                         .cornerRadius(21)
                         .aspectRatio(contentMode: .fit)

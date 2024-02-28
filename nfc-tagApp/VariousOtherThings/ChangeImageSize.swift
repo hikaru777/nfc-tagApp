@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIImage {
-
+    
     func resize(targetSize: CGSize) -> UIImage {
         return UIGraphicsImageRenderer(size:targetSize).image { _ in
             self.draw(in: CGRect(origin: .zero, size: targetSize))
@@ -17,7 +17,7 @@ extension UIImage {
     }
     
     func widthResize(image: UIImage, width: Double) -> UIImage {
-            
+        
         // オリジナル画像のサイズからアスペクト比を計算
         let aspectScale = image.size.height / image.size.width
         
@@ -34,7 +34,7 @@ extension UIImage {
     }
     
     func heightResize(image: UIImage, height: Double) -> UIImage {
-            
+        
         // オリジナル画像のサイズからアスペクト比を計算
         let aspectScale = image.size.width / image.size.height
         
@@ -49,5 +49,5 @@ extension UIImage {
         
         return resizedImage!
     }
-
+    
 }
