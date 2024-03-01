@@ -18,10 +18,11 @@ struct NextView: View, SendProfileOKDelegate {
     @State var showImagePickerView = false
     @State var name: String = ""
 
+    //    @State private var isTextFieldVisible = true
+
     @State var ininputText: String = ""
     @State private var showOptions: Bool = false
     @State private var selectedOption: String?
-
     @State var editorText: String = ""
     @FocusState var focus: Bool
 
@@ -49,6 +50,7 @@ struct NextView: View, SendProfileOKDelegate {
                 .padding(.top, 10)
                 .opacity(Double(viewModel.opacity))
 
+                //                if isTextFieldVisible {
                 TextField("名前！", text: $name)
                     .padding()
                     .background(Color.white)
@@ -57,12 +59,18 @@ struct NextView: View, SendProfileOKDelegate {
                     .font(.system(size: 30.0))
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(TextAlignment.center)
+                //                    .onChange(of: name) { newValue in
+                //                        if !newValue.isEmpty {
+                //                            isTextFieldVisible = false
+                //                        }
+                //                    }
+                //                }
 
                 switch name.count {
                 case 1:
                     HStack{
                         Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 30))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                     }
@@ -71,13 +79,13 @@ struct NextView: View, SendProfileOKDelegate {
                 case 2:
                     HStack{
                         Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 30))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: -6))
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 30))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: 6))
@@ -87,21 +95,21 @@ struct NextView: View, SendProfileOKDelegate {
                 case 3:
                     HStack{
                         Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 30))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: -18))
                             .padding(.trailing, -4)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 30))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: 0))
                             .padding(.top, -10)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 2)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 30))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: 18))
@@ -112,28 +120,28 @@ struct NextView: View, SendProfileOKDelegate {
                 case 4:
                     HStack{
                         Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: -30))
                             .padding(.trailing, -4)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: -9))
                             .padding(.top, -24)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 2)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: 9))
                             .padding(.top, -24)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 3)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: 30))
@@ -144,41 +152,43 @@ struct NextView: View, SendProfileOKDelegate {
                 case 5:
                     HStack{
                         Text(String(name[name.index(name.startIndex, offsetBy: 0)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
-                            .rotationEffect(Angle(degrees: -40))
-                            .padding(.trailing, -8)
+                            .rotationEffect(Angle(degrees: -42))
+                            .padding(.trailing, -10)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 1)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
-                            .rotationEffect(Angle(degrees: -18))
-                            .padding(.top, -30)
+                            .rotationEffect(Angle(degrees: -22))
+                            .padding(.top, -32)
+                            .padding(.trailing, -6)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 2)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
                             .rotationEffect(Angle(degrees: 0))
-                            .padding(.top, -36)
+                            .padding(.top, -38)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 3)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
-                            .rotationEffect(Angle(degrees: 18))
-                            .padding(.top, -30)
+                            .rotationEffect(Angle(degrees: 22))
+                            .padding(.top, -32)
+                            .padding(.leading, -6)
 
                         Text(String(name[name.index(name.startIndex, offsetBy: 4)]))
-                            .font(Font.custom("SF Pro", size: 20))
+                            .font(Font.custom("SF Pro", size: 26))
                             .multilineTextAlignment(.trailing)
                             .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
-                            .rotationEffect(Angle(degrees: 40))
-                            .padding(.leading, -8)
+                            .rotationEffect(Angle(degrees: 42))
+                            .padding(.leading, -10)
                     }
-                    .padding(.bottom, -32)
+                    .padding(.bottom, -26)
 
                 default:
                     EmptyView()
@@ -206,7 +216,7 @@ struct NextView: View, SendProfileOKDelegate {
                         KFImage(viewModel.imageUrl)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 100)
+                            .frame(width: 160)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.gray, lineWidth: 2))
                             .shadow(color: .gray.opacity(0.5), radius: 13, x: 0, y: 0)
