@@ -20,6 +20,8 @@ struct ContentView: View, SendProfileOKDelegate {
     @StateObject var viewModel: WriteIntoNFCViewModel
     @State var isPresented: Bool = false
 
+    @StateObject var lenticulationManager = LenticulationManager()
+
     var body: some View {
         VStack(spacing: 15) {
 
@@ -32,17 +34,31 @@ struct ContentView: View, SendProfileOKDelegate {
 
                 if viewModel.decidedProfileImageUrl != "" {
 
-                    KFImage(URL(string: viewModel.decidedProfileImageUrl))
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 300, height: 500)
-                        .background(Color.white)
-                        .cornerRadius(21)
-                        .aspectRatio(contentMode: .fit)
-                        .onTapGesture {
-                            viewModel.opacity = 100
-                            isPresented = true
-                        }
+                    ZStack {
+                        //                        Image("back")
+                        //                            .resizable()
+                        //                            .ignoresSafeArea()
+                        //                            .scaledToFit()
+
+                        KFImage(URL(string: viewModel.decidedProfileImageUrl))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 300, height: 500)
+                            .background(Color.white)
+                            .cornerRadius(21)
+                            .aspectRatio(contentMode: .fit)
+                            .onTapGesture {
+                                viewModel.opacity = 100
+                                isPresented = true
+                            }
+                        Image("front")
+                            .resizable()
+                        //                            .ignoresSafeArea()
+                            .frame(width: 300, height: 500)
+                            .cornerRadius(21)
+                        //                            .aspectRatio(contentMode: .fit)
+                            .opacity(lenticulationManager.frontImageOpacitry)
+                    }
 
                 } else {
                     Image("Image 1")

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C170642B92351A00FEC0DF /* LenticulationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C170632B92351A00FEC0DF /* LenticulationManager.swift */; };
+		21C170662B92354100FEC0DF /* Double+convertedRadianToDegree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C170652B92354100FEC0DF /* Double+convertedRadianToDegree.swift */; };
 		5D01DFF02B708FFC0042FE5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01DFEF2B708FFC0042FE5E /* ContentView.swift */; };
 		5D01DFF22B70900F0042FE5E /* SendToDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01DFF12B70900F0042FE5E /* SendToDB.swift */; };
 		5D01DFF52B7091DD0042FE5E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D01DFF42B7091DD0042FE5E /* Kingfisher */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21C170632B92351A00FEC0DF /* LenticulationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenticulationManager.swift; sourceTree = "<group>"; };
+		21C170652B92354100FEC0DF /* Double+convertedRadianToDegree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+convertedRadianToDegree.swift"; sourceTree = "<group>"; };
 		5D01DFEF2B708FFC0042FE5E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D01DFF12B70900F0042FE5E /* SendToDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendToDB.swift; sourceTree = "<group>"; };
 		5D01DFF62B70939C0042FE5E /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C170622B9234F200FEC0DF /* SlantedCard  */ = {
+			isa = PBXGroup;
+			children = (
+				21C170632B92351A00FEC0DF /* LenticulationManager.swift */,
+				21C170652B92354100FEC0DF /* Double+convertedRadianToDegree.swift */,
+			);
+			path = "SlantedCard ";
+			sourceTree = "<group>";
+		};
 		5D063A0F2B61251A003C3E9D = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +131,8 @@
 				5D063A372B612616003C3E9D /* CodableNFCManager.swift */,
 				5D063A382B612616003C3E9D /* NFCManager.swift */,
 				5D063A3B2B612637003C3E9D /* SinpleTabGroup */,
-				5D063A402B612637003C3E9D /* ViewGroup */,
 				5D063A442B612637003C3E9D /* ViewModelGroup */,
+				5D063A402B612637003C3E9D /* ViewGroup */,
 				5DEA0B302B6A51B40040F2E3 /* VariousOtherThings */,
 				5D063A1F2B61251B003C3E9D /* Assets.xcassets */,
 				5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */,
@@ -152,6 +165,7 @@
 			children = (
 				5D063A432B612637003C3E9D /* MainView.swift */,
 				5D01DFEF2B708FFC0042FE5E /* ContentView.swift */,
+				21C170622B9234F200FEC0DF /* SlantedCard  */,
 				5D01DFF62B70939C0042FE5E /* NextView.swift */,
 				5D063A412B612637003C3E9D /* LoadIntoNFC.swift */,
 				5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */,
@@ -276,10 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DEA0B3A2B6A52700040F2E3 /* Data.swift in Sources */,
+				21C170662B92354100FEC0DF /* Double+convertedRadianToDegree.swift in Sources */,
 				5D5AA73E2B7124C3003E196D /* AsyncCompactMap.swift in Sources */,
 				5D01DFF02B708FFC0042FE5E /* ContentView.swift in Sources */,
 				5D063A4B2B612637003C3E9D /* LoadIntoNFC.swift in Sources */,
 				5D063A392B612616003C3E9D /* CodableNFCManager.swift in Sources */,
+				21C170642B92351A00FEC0DF /* LenticulationManager.swift in Sources */,
 				5D063A4F2B612637003C3E9D /* WriteIntoNFCViewModel.swift in Sources */,
 				5D063A472B612637003C3E9D /* CustomSinpleTab.swift in Sources */,
 				5D063A3A2B612616003C3E9D /* NFCManager.swift in Sources */,
