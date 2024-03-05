@@ -35,6 +35,7 @@
 		5D5AA7382B70B4F2003E196D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D063A222B61251B003C3E9D /* Preview Assets.xcassets */; };
 		5D5AA73C2B70D803003E196D /* UIImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */; };
 		5D5AA73E2B7124C3003E196D /* AsyncCompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */; };
+		5D8BE3A62B949F4F0087521A /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5D8BE3A52B949F4F0087521A /* Shader.metal */; };
 		5DC711D82B62B4DE00257AF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */; };
 		5DC712972B6A4D7300257AF3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC712962B6A4D7300257AF3 /* FirebaseAuth */; };
 		5DEA0B322B6A51E60040F2E3 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA0B312B6A51E60040F2E3 /* FirebaseClient.swift */; };
@@ -70,6 +71,7 @@
 		5D063A542B62B1A4003C3E9D /* nfc-tagApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nfc-tagApp.entitlements"; sourceTree = "<group>"; };
 		5D5AA73B2B70D803003E196D /* UIImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerView.swift; sourceTree = "<group>"; };
 		5D5AA73D2B7124C3003E196D /* AsyncCompactMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCompactMap.swift; sourceTree = "<group>"; };
+		5D8BE3A52B949F4F0087521A /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 		5DC711D72B62B4DE00257AF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5DEA0B312B6A51E60040F2E3 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		5DEA0B392B6A52700040F2E3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				21C170632B92351A00FEC0DF /* LenticulationManager.swift */,
 				21C170652B92354100FEC0DF /* Double+convertedRadianToDegree.swift */,
+				5D8BE3A52B949F4F0087521A /* Shader.metal */,
 			);
 			path = "SlantedCard ";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				5D063A4E2B612637003C3E9D /* ReadIntoNFCViewModel.swift in Sources */,
 				5D01DFF72B70939C0042FE5E /* NextView.swift in Sources */,
 				5D01DFFB2B7097A90042FE5E /* ChangeImageSize.swift in Sources */,
+				5D8BE3A62B949F4F0087521A /* Shader.metal in Sources */,
 				5D063A4D2B612637003C3E9D /* MainView.swift in Sources */,
 				5D01DFF22B70900F0042FE5E /* SendToDB.swift in Sources */,
 				5D063A492B612637003C3E9D /* TabViewModel.swift in Sources */,
@@ -446,7 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nfc-tagApp/Preview Content\"";
-				DEVELOPMENT_TEAM = F584ZURPSX;
+				DEVELOPMENT_TEAM = 8VQ7U9Z9U2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nfc-tagApp/Info.plist";
@@ -463,7 +467,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "aoba.nfc-tagApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "nfc-tagApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -482,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nfc-tagApp/Preview Content\"";
-				DEVELOPMENT_TEAM = F584ZURPSX;
+				DEVELOPMENT_TEAM = 8VQ7U9Z9U2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nfc-tagApp/Info.plist";
@@ -499,7 +503,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "aoba.nfc-tagApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "nfc-tagApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

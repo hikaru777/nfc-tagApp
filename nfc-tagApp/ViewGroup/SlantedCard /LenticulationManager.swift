@@ -7,12 +7,14 @@
 
 import CoreMotion
 import CoreGraphics
+import SwiftUI
 
 class LenticulationManager: ObservableObject {
 
     @Published var middleImageOpacity: CGFloat = 1
     @Published var frontImageOpacitry: CGFloat = 0
-
+    @Published var degree: Float = 0
+    
     private let motionManager = CMMotionManager()
 
     ///  基準にする角度
@@ -34,24 +36,27 @@ class LenticulationManager: ObservableObject {
 
             // ラジアンを角度に変換
             let degree = deviceMotion.attitude.roll.convertedRadianToDegree()
+            self.degree = Float(degree)
             // 角度から姿勢状態に変換
             let attitudeState = DeviceAttitudeState(degree)
             // 姿勢の状態に応じてImageOpacityの値を更新
             self.updateImageOpacity(with: attitudeState)
+//            self.voronoi = self.makeVoronoi()
+            print(deviceMotion.attitude.roll.convertedRadianToDegree())
         }
     }
-
+    
     /// デバイスの姿勢状態に応じてImageOpacityの値を更新
     private func updateImageOpacity(with attributeState: DeviceAttitudeState) {
 
         switch attributeState {
         case .flat:
-            update(middleImageOpacity: 1, andFrontImageOpacity: 0)
+            update(middleImageOpacity: 0, andFrontImageOpacity: 0)
         case .forward(let degree):
             let frontOpacity = degree >= baseDegrees ?  1 : degree / baseDegrees
-            update(middleImageOpacity: 1, andFrontImageOpacity: frontOpacity)
+            update(middleImageOpacity: 0, andFrontImageOpacity: frontOpacity)
         case .backward(let degree):
-            let middleOpacity = degree >= baseDegrees ?  0 : (baseDegrees - degree) / baseDegrees
+            let middleOpacity = degree >= baseDegrees ?  1 : degree / baseDegrees
             update(middleImageOpacity: middleOpacity, andFrontImageOpacity: 0)
         }
     }
@@ -60,6 +65,8 @@ class LenticulationManager: ObservableObject {
                         andFrontImageOpacity frontImageOpacty: CGFloat) {
         self.middleImageOpacity = middleImageOpacity
         self.frontImageOpacitry = frontImageOpacty
+        print("😞",frontImageOpacty)
+        print("🙄",middleImageOpacity)
     }
 }
 
