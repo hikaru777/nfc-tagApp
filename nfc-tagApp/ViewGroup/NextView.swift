@@ -50,7 +50,7 @@ struct NextView: View, SendProfileOKDelegate {
                 .padding(.top, 10)
                 .opacity(Double(viewModel.opacity))
 
-                //                if isTextFieldVisible {
+//                                if isTextFieldVisible {
                 TextField("名前！", text: $name)
                     .padding()
                     .background(Color.white)
@@ -64,7 +64,7 @@ struct NextView: View, SendProfileOKDelegate {
                 //                            isTextFieldVisible = false
                 //                        }
                 //                    }
-                //                }
+//                                }
 
                 switch name.count {
                 case 1:
